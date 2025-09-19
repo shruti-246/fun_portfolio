@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  width: 100%;        /* ← add this */
+  width: 100%;        
   margin: 0;
   background: black;
   color: white;
@@ -9,7 +9,7 @@ body {
 
 #root {
   text-align: center;
-  background: black; /* optional, body is already black */
+  background: black; /
 }
 
 .logo {
