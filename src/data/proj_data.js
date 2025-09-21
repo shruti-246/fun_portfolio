@@ -21,7 +21,7 @@ export const projects = [
       "Unity-based 3D game with customizable characters, achievements and in-game shop. Developed full UI and menu systems using C#.",
     image: legendImg,
     stack: ["Unity", "C#", "Unity Testing"],
-    github: "https://github.com/your-username/legend-of-warriors",
+    github: "https://github.com/shruti-246/legend_of_warriors",
     demo: "https://drive.google.com/file/d/1fR7Z4LCLAUbvLe8JaqucWBlK9Gi16i0b/view?usp=drive_link",   
   },
   {
