@@ -1,5 +1,5 @@
 export const recommendations = [
-  {
+  /*{
     name: "Joe vandal",
     title: "X, University of Idaho",
     text: "Some text.",
@@ -11,5 +11,5 @@ export const recommendations = [
     title: "YY",
     text: "Some text",
     avatar: "/assets/reco_john.jpg"
-  }
+  }*/
 ];

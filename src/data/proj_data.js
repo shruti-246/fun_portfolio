@@ -33,10 +33,10 @@ export const projects = [
     github: "https://gist.github.com/shruti-246/f7a23175191ef7fbddec0dab095a7e71"
   },
   {
-    title: cloakImg,
+    title: "Invisible Cloak",
     description:
       "Fun OpenCV project that creates an invisibility cloak effect using color masking and real-time video processing.",
-    image: "/assets/cloak.jpg",
+    image: cloakImg,
     stack: ["Python", "OpenCV", "NumPy"],
     github: "https://github.com/shruti-246/First-project",
   },
