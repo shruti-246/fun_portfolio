@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/landing";
 import Recruiter from "./pages/Recruiter";
 import Skills from "./pages/Skill";
