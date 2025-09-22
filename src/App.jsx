@@ -8,6 +8,7 @@ import Certifications from "./pages/Cert";
 import Recommendations from "./pages/Recom";
 import Projects from "./pages/Proj";
 import Contact from "./pages/Cont";
+import InProgress from "./pages/InProgress";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
         <Route path="/recommendations" element={<Recommendations />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        {/* Catch-all for anything not matched */}
+        <Route path="*" element={<InProgress />} />
       </Routes>
   );
 }
