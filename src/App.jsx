@@ -11,7 +11,6 @@ import Contact from "./pages/Cont";
 
 function App() {
   return (
-    <Router>
       <Routes>
         {/* Home / Landing */}
         <Route path="/" element={<Landing />} />
@@ -28,7 +27,6 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
   );
 }
 
