@@ -27,6 +27,10 @@ function App() {
         <Route path="/recommendations" element={<Recommendations />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        {/* Profiles still under construction */}
+        <Route path="/stalker" element={<InProgress />} />
+        <Route path="/developer" element={<InProgress />} />
+        <Route path="/researcher" element={<InProgress />} />
         {/* Catch-all for anything not matched */}
         <Route path="*" element={<InProgress />} />
       </Routes>
