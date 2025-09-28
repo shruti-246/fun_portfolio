@@ -6,9 +6,9 @@ export const themes = {
     button: "bg-teal-500 hover:bg-teal-400",
   },
   developer: {
-    bg: "bg-[#1e1b4b]",
-    accent: "text-purple-400",
-    button: "bg-purple-600 hover:bg-purple-500",
+    bg: "#2D1B3D",          
+    accent: "#F7C6D9",      
+    hover: "#B497BD",       
   },
   stalker: {
     bg: "bg-gray-900",
