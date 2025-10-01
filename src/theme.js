@@ -6,9 +6,14 @@ export const themes = {
     button: "bg-teal-500 hover:bg-teal-400",
   },
   developer: {
-    bg: "#2D1B3D",          
+    bg: "#614150ff",          
     accent: "#F7C6D9",      
     hover: "#B497BD",       
+  },
+  researcher: {
+    bg: "#483e57ff",          // deep royal purple
+    accent: "#C9A7EB",      // soft lavender
+    hover: "#A483D8",       // muted violet
   },
   stalker: {
     bg: "bg-gray-900",

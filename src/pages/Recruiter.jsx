@@ -1,19 +1,19 @@
 // src/pages/Recruiter.jsx
 import React from "react";
-import banner from "../assets/banner.jpg";
+import banner from "../assets/req/req_banner.jpg";
 import { FaPlay, FaLinkedin } from "react-icons/fa";
 import { themes } from "../theme";
-import devPic from "../assets/dev.jpg";
+//import devPic from "../assets/recruiter.jpg";
 import resume from "../assets/resume.pdf";
 
 // Top Picks images
-import workPermitImg from "../assets/picks/work_permit.jpg";
-import experienceImg from "../assets/picks/experience.jpg";
-import skillsImg from "../assets/picks/skills.jpg";
-import certificationsImg from "../assets/picks/certification.jpg";
-import recommendationsImg from "../assets/picks/recommendations.jpg";
-import projectsImg from "../assets/picks/projects.jpg";
-import contactMeImg from "../assets/picks/contact_me.jpg";
+import workPermitImg from "../assets/req/work_permit.jpg";
+import experienceImg from "../assets/req/experience.jpg";
+import skillsImg from "../assets/req/skills.jpg";
+import certificationsImg from "../assets/req/certification.jpg";
+import recommendationsImg from "../assets/req/recommendations.jpg";
+import projectsImg from "../assets/req/projects.jpg";
+import contactMeImg from "../assets/req/contact_me.jpg";
 
 import { Link } from "react-router-dom";
 import RecruiterNavbar from "../components/RecruiterNavbar";

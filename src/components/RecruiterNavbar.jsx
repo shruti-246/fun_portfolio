@@ -1,5 +1,5 @@
 import React from "react";
-import devPic from "../assets/dev.jpg"; // adjust path if needed
+import devPic from "../assets/recruiter.jpg"; // adjust path if needed
 import { Link } from "react-router-dom";
 
 export default function RecruiterNavbar() {

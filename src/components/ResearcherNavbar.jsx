@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import devPic from "../assets/developer.jpg"; 
+import devPic from "../assets/researcher.jpg"; 
 import { themes } from "../theme";
 
-export default function DeveloperNavbar() {
-  const t = themes.developer; 
+export default function ResearcherNavbar() {
+  const t = themes.researcher; 
 
   const linkBase =
     "text-white/90 hover:text-white transition font-medium";
@@ -22,7 +22,7 @@ export default function DeveloperNavbar() {
       <div className="flex justify-between items-center px-10 py-4">
         {/* Brand */}
         <Link
-          to="/developer"
+          to="/researcher"
           className="font-netflix text-4xl md:text-5xl font-bold tracking-widest"
           style={{ color: t.accent }}
         >
@@ -31,16 +31,19 @@ export default function DeveloperNavbar() {
 
         {/* Links */}
         <div className="flex items-center gap-8">
-          <NavLink to="/developer" className={linkBase + " " + active}>
+          <NavLink to="/researcher" className={linkBase + " " + active}>
             Home
           </NavLink>
-          <NavLink to="/dev/projects" className={linkBase}>
-            Projects
+          <NavLink to="/res/interests" className={linkBase}>
+            Interests
           </NavLink>
-          <NavLink to="/dev/tools" className={linkBase}>
+          <NavLink to="/res/literature" className={linkBase}>
+            Literature
+          </NavLink>
+          <NavLink to="/res/tools" className={linkBase}>
             Tools
           </NavLink>
-          <NavLink to="/dev/contact" className={linkBase}>
+          <NavLink to="/res/contact" className={linkBase}>
             Contact
           </NavLink>
 

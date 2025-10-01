@@ -1,17 +1,19 @@
+// src/pages/Researcher.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import DeveloperNavbar from "../components/DeveloperNavbar";
+import ResearcherNavbar from "../components/ResearcherNavbar"; 
 import { themes } from "../theme";
-import banner from "../assets/dev/dev_banner.jpg";
-import { devProjects } from "../data/projects_dev";
-import devProjImg from "../assets/dev/projects.jpg";
-import devOssImg from "../assets/dev/oss.jpg";
-import devBlogImg from "../assets/dev/blog.jpg";
-import devToolsImg from "../assets/dev/tools.jpg";
-import devContactImg from "../assets/dev/contact.jpg";
+import banner from "../assets/res/res_banner.jpg"; 
 
-// Carousel row styled for the dev theme
-const DevRow = ({ title, items, theme }) => (
+//top picks images 
+import InterestImg from "../assets/res/res_int.jpg"
+import LiteratureImg from "../assets/res/lit_res.jpg"
+import ToolsImg from "../assets/res/tools_res.jpg"
+import ContactImg from "../assets/res/cont_res.jpg"
+//import placeholder from "../assets/placeholder.jpg"
+
+// Reusable row for top picks
+const ResearchRow = ({ title, items, theme }) => (
   <div className="px-8 pt-4 pb-6 mb-10">
     <h2 className="text-xl font-semibold mb-4" style={{ color: theme.accent }}>
       {title}
@@ -42,10 +44,7 @@ const DevRow = ({ title, items, theme }) => (
           }}
         >
           <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
-          <div
-            className="absolute inset-0"
-            style={{ backgroundColor: "#00000066" }}
-          />
+          <div className="absolute inset-0" style={{ backgroundColor: "#00000066" }} />
           <span
             className="absolute bottom-2 left-2 font-bold text-sm drop-shadow"
             style={{ color: theme.accent }}
@@ -58,17 +57,14 @@ const DevRow = ({ title, items, theme }) => (
   </div>
 );
 
-export default function Developer() {
-  const t = themes.developer;
-
-  // temporary images — reuse your picks or any placeholder
+export default function Researcher() {
+  const t = themes.researcher; 
 
   const picks = [
-    { title: "Dev Projects",        img: devProjImg, link: "/dev/projects" },
-    { title: "Open Source",         img: devOssImg, link: "/dev/oss" },
-    { title: "Blog / Notes",        img: devBlogImg, link: "/dev/blog" },
-    { title: "Tools & Setup",       img: devToolsImg, link: "/dev/tools" },
-    { title: "Contact",             img: devContactImg, link: "/dev/contact" },
+    { title: "Research Interests",   img: InterestImg, link: "/res/interests" },
+    { title: "Literature Reviews",   img: LiteratureImg, link: "/res/literature" },
+    { title: "Contact",              img: ContactImg, link: "/res/contact" },
+    { title: "Tools & Setup",        img: ToolsImg, link: "/res/tools" },
   ];
 
   return (
@@ -82,18 +78,19 @@ export default function Developer() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to top, rgba(0,0,0,0.6), rgba(45,27,61,0.55), rgba(255, 255, 255, 0))",
+              "linear-gradient(to top, rgba(0,0,0,0.6), rgba(30,19,48,0.55), rgba(30,19,48,0.0))",
           }}
         />
-        <DeveloperNavbar />
+        <ResearcherNavbar />
 
         <div className="relative z-10 max-w-2xl">
           <h1 className="text-4xl font-extrabold mb-4" style={{ color: t.accent }}>
-            Shruti — Developer
+            Shruti — Aspiring Researcher
           </h1>
           <p className="text-lg mb-6 text-white/90">
-            Building clean, performant interfaces and playful experiments.
-            I love turning ideas into working products with React, Flutter, and Python backends.
+            Interested in data science, machine learning, and the intersection of technology & healthcare.
+            Exploring how intelligent systems can be built responsibly and explainably.
+            Open to research opportunities and collaborations.
           </p>
 
           <div className="flex gap-4">
@@ -102,14 +99,14 @@ export default function Developer() {
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 rounded font-semibold transition"
-              style={{ backgroundColor: t.accent, color: "#2D1B3D" }}
+              style={{ backgroundColor: t.accent, color: "#1E1330" }}
               onMouseEnter={(e)=> e.currentTarget.style.backgroundColor = t.hover}
               onMouseLeave={(e)=> e.currentTarget.style.backgroundColor = t.accent}
             >
               GitHub
             </a>
             <Link
-              to="/dev/projects"
+              to="/research/interests"
               className="px-4 py-2 rounded font-semibold"
               style={{ border: `2px solid ${t.accent}`, color: t.accent }}
               onMouseEnter={(e)=> {
@@ -123,7 +120,7 @@ export default function Developer() {
                 e.currentTarget.style.color = t.accent;
               }}
             >
-              View Projects
+              Explore Research
             </Link>
           </div>
         </div>
@@ -131,7 +128,7 @@ export default function Developer() {
 
       {/* Rows */}
       <div className="relative z-10 pt-10">
-        <DevRow title="Today’s Top Picks for Developer" items={picks} theme={t} />
+        <ResearchRow title="Top Picks for Researcher" items={picks} theme={t} />
       </div>
     </div>
   );

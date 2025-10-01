@@ -1,16 +1,16 @@
-import dev from "../assets/dev.jpg";
-import designer from "../assets/designer.jpg";
-import student from "../assets/student.jpg";
-import adventurer from "../assets/adventurer.jpg";
+import recruiter from "../assets/recruiter.jpg";
+import developer from "../assets/developer.jpg";
+import stalker from "../assets/stalker.jpg";
+import researcher from "../assets/researcher.jpg";
 import { useNavigate } from "react-router-dom";
 
 export default function Landing() {
   const navigate = useNavigate();
   const profiles = [
-    { name: "Recruiter", img: dev, bg: "bg-sky-500", route: "/recruiter"},
-    { name: "Developer", img: designer, bg: "bg-pink-500", route: "/developer" },
-    { name: "Researcher", img: student, bg: "bg-purple-400", route: "/researcher" },
-    { name: "Stalker", img: adventurer, bg: "bg-yellow-400", route: "/stalker" },
+    { name: "Recruiter", img: recruiter, bg: "bg-sky-500", route: "/recruiter"},
+    { name: "Developer", img: developer, bg: "bg-pink-500", route: "/developer" },
+    { name: "Researcher", img: researcher, bg: "bg-purple-400", route: "/researcher" },
+    { name: "Stalker", img: stalker, bg: "bg-yellow-400", route: "/stalker" },
   ];
 
   return (
