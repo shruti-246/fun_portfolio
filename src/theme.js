@@ -11,13 +11,13 @@ export const themes = {
     hover: "#B497BD",       
   },
   researcher: {
-    bg: "#483e57ff",          // deep royal purple
-    accent: "#C9A7EB",      // soft lavender
-    hover: "#A483D8",       // muted violet
+    bg: "#483e57ff",          
+    accent: "#C9A7EB",      
+    hover: "#A483D8",       
   },
   stalker: {
-    bg: "bg-gray-900",
-    accent: "text-amber-400",
-    button: "bg-amber-500 hover:bg-amber-400",
+    bg: "#2B1D00",       
+    accent: "#FFD54F",   
+    hover: "#FFE082",    
   },
 };
