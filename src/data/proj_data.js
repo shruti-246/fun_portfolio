@@ -52,9 +52,9 @@ export const projects = [
   {
     title: "OOP 2D Text Adventure",
     description:
-      "A console-based 2D adventure game demonstrating OOP principles in Python.",
+      "A console-based 2D adventure game demonstrating OOP principles in C++.",
     image: textgameImg,
-    stack: ["Python", "OOP", "C++"],
+    stack: ["OOP", "C++"],
     github: "https://github.com/shruti-246/Game_projects",
   },
 ];

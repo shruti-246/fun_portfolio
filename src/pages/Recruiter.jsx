@@ -1,7 +1,7 @@
 // src/pages/Recruiter.jsx
 import React from "react";
 import banner from "../assets/req/req_banner.jpg";
-import { FaPlay, FaLinkedin } from "react-icons/fa";
+import { FaPlay, FaLinkedin, FaGithub } from "react-icons/fa";
 import { themes } from "../theme";
 //import devPic from "../assets/recruiter.jpg";
 import resume from "../assets/resume.pdf";
@@ -105,6 +105,15 @@ export default function Recruiter() {
               className="flex items-center gap-2 bg-white text-black px-4 py-2 rounded font-semibold hover:bg-gray-300 transition"
             >
               <FaPlay className="text-black text-sm" /> Resume
+            </button>
+            
+            <button
+              onClick={() =>
+                window.open("https://github.com/shruti-246", "_blank")
+              }
+              className={`flex items-center gap-2 px-4 py-2 rounded font-semibold transition ${theme.button}`}
+            >
+              <FaGithub className="text-sm" /> Github
             </button>
 
             <button

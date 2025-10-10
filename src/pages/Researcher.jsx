@@ -105,7 +105,7 @@ export default function Researcher() {
             >
               GitHub
             </a>
-            <Link
+            {/* <Link
               to="/research/interests"
               className="px-4 py-2 rounded font-semibold"
               style={{ border: `2px solid ${t.accent}`, color: t.accent }}
@@ -121,7 +121,7 @@ export default function Researcher() {
               }}
             >
               Explore Research
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

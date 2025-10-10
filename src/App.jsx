@@ -29,7 +29,7 @@ import Hobbies from "./pages/stalk/hobbies";
 import ContactStalker from "./pages/stalk/ContactStalker";
 import ArtAndCraft from "./pages/stalk/ArtAndCraft";
 import Singing from "./pages/stalk/Singing";
-import Reading from "./pages/stalk/Reading";
+import Click_Pic from "./pages/stalk/Click_Pic";
 import GoodMemories from "./pages/stalk/GoodMemories";
 import PeopleILove from "./pages/stalk/PeopleILove";
 import Family from "./pages/stalk/Family";
@@ -72,7 +72,7 @@ function App() {
         <Route path="/researcher" element={<Researcher />} />
 
         {/* Sub-pages for Top Picks of Researcher*/}
-        <Route path="/res/interests" element={<InterestsResearcher />} />
+        <Route path="/res/interests" element={<InterestsResearcher />} /> 
         <Route path="/res/literature" element={<LiteratureResearcher />} />
         <Route path="/res/tools" element={<ToolsResearcher />} />
         <Route path="/res/contact" element={<ContactRes />} />
@@ -83,7 +83,7 @@ function App() {
         <Route path="/stalker/contact" element={<ContactStalker />} />
         <Route path="/stalker/art-craft" element={<ArtAndCraft />} />
         <Route path="/stalker/singing" element={<Singing />} />
-        <Route path="/stalker/reading" element={<Reading />} />
+        <Route path="/stalker/click_pic" element={<Click_Pic />} />
         <Route path="/stalker/memories" element={<GoodMemories />} />
         <Route path="/stalker/people" element={<PeopleILove />} />
         <Route path="/stalker/people/Family" element={<Family />} />

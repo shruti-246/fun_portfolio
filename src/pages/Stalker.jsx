@@ -9,7 +9,6 @@ import HobbiesImg from "../assets/stalk/hobbies.jpg";
 import BucketListImg from "../assets/stalk/BucketList.jpg";
 import MemoriesImg from "../assets/stalk/goodMem.jpg";
 import PeopleImg from "../assets/stalk/peopleIlove.jpg";
-import TravelImg from "../assets/stalk/travelList.jpg";
 import FactsImg from "../assets/stalk/RandomFacts.jpg";
 import MilestonesImg from "../assets/stalk/milestone.jpg";
 import SecretsImg from "../assets/stalk/secrets.jpg";
@@ -46,8 +45,7 @@ const CarouselRow = ({ title, items }) => (
 );
 
 export default function Stalker() {
-  const theme = themes.stalker; // using yellow-themed color palette
-
+  const theme = themes.stalker; 
   // --- Top Picks ---
   const topPicks = [
     { title: "About Me", img: AboutMeImg, link: "/stalker/about" },
@@ -59,7 +57,6 @@ export default function Stalker() {
 
   // --- Additional Picks ---
   const additionalPicks = [
-    { title: "Travel Wishlist", img: TravelImg, link: "/stalker/travel" },
     { title: "Random Facts", img: FactsImg, link: "/stalker/facts" },
     { title: "Milestones", img: MilestonesImg, link: "/stalker/milestones" },
     { title: "Secrets", img: SecretsImg, link: "/stalker/secrets" },

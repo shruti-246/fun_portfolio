@@ -28,7 +28,7 @@ export default function Hobbies() {
       title: "Clicking Pictures",
       desc: "Photography helps me capture moments and see the world from different perspectives.",
       img: ClickPicImg,
-      link: "/stalker/reading"
+      link: "/stalker/click_pic"
     },
   ];
 
