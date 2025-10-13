@@ -38,7 +38,7 @@ src/
 │
 ├── assets/              # Images, icons, banners
 ├── components/          # Reusable UI elements (navbars, cards, etc.)
-├── data/                # All content in JS modules (family_data, randomFacts, etc.)
+├── data/                # All content in JS modules (All seperate data files for each cards)
 ├── pages/
 │   ├── recruiter/       # Professional content
 │   ├── developer/       # Projects & tools
