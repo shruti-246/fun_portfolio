@@ -34,16 +34,16 @@ Each persona has its own navigation, pages, and mood, but they all share the sam
 
 ## Folder Structure
 src/
-│
-├── assets/ # Images, icons, banners
-├── components/ # Reusable UI elements (navbars, cards, etc.)
-├── data/ # All content in JS modules (family_data, randomFacts, etc.)
-├── pages/
-│ ├── recruiter/ # Professional content
-│ ├── developer/ # Projects & tools
-│ ├── researcher/ # Literature, academic content
-│ └── stalker/ # Personal, creative side
-└── theme.js # Central theme management (colors, accents)
+
+── assets/ # Images, icons, banners
+── components/ # Reusable UI elements (navbars, cards, etc.)
+── data/ # All content in JS modules (All Data files are separated.)
+── pages/
+ ── recruiter/ # Professional content
+ ── developer/ # Projects & tools
+ ── researcher/ # Literature, academic content
+ ── stalker/ # Personal, creative side
+── theme.js # Central theme management (colors, accents)
 
 ## ⚙️ Setup & Development
 
