@@ -1,4 +1,4 @@
-# Logs
+# --- Logs
 logs
 *.log
 npm-debug.log*
@@ -7,18 +7,45 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# --- Dependencies & builds
 node_modules
 dist
 dist-ssr
 *.local
+# Vite cache
+node_modules/.vite
+# package tarballs
+*.tgz
 
-# Editor directories and files
+# --- Environment / secrets
+.env
+.env.*
+!.env.example
+
+# --- Editor / OS
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# --- Lint/Tool caches
+.eslintcache
+.stylelintcache
+.pnpm-store/
+
+# --- Test artifacts (add if/when you use them)
+coverage/
+cypress/screenshots/
+cypress/videos/
+playwright-report/
+test-results/
+
+# --- Local preview uploads (for your editor/live preview; safe to ignore)
+public/uploads/
+uploads/
